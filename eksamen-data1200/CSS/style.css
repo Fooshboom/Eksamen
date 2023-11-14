@@ -1,0 +1,11 @@
+.htmlLink{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 350%;
+
+}
+.spaceBetween{
+padding-right: 2%;
+padding-left: 2%;
+}
