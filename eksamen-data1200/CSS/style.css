@@ -1,11 +1,26 @@
-.htmlLink{
+body {
+    margin: 0;
+  }
+
+.navbar{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 350%;
-
+    justify-content: center;
 }
-.spaceBetween{
+
+.navbar li {
 padding-right: 2%;
 padding-left: 2%;
 }
+
+/*Responsive layout: Stack two columns vertically under 700px. Code nspired from W3Schools responsive flexboxes.*/
+
+@media screen and (max-width: 700px) {
+     .navbar {   
+      flex-direction: column;
+    }
+  }
+
+
+
