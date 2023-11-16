@@ -32,6 +32,14 @@ nav input[type='checkbox'], nav label {
   display: none;
 }
 
+img{
+  border-radius: 8%;
+}
+
+img{
+  border-radius: 8%;
+}
+
 /*Responsive layout: Stack two columns vertically under 700px. Code inspired from "W3Schools responsive flexboxes." */
 
 @media screen and (max-width: 700px) {
