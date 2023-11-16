@@ -28,30 +28,26 @@ body {
     font-weight: bold;
 }
 
-.nav-btn {
-    height: fit-content;
-    padding: 1em 1.5em;
-    background-color: transparent;
-    border-radius: 5px;
-    font-weight: bold;
+nav input[type='checkbox'], nav label {
+  display: none;
 }
 
-/*Responsive layout: Stack two columns vertically under 700px. Code nspired from W3Schools responsive flexboxes.*/
+/*Responsive layout: Stack two columns vertically under 700px. Code inspired from "W3Schools responsive flexboxes." */
 
 @media screen and (max-width: 700px) {
+
+
      .navbar,ul,li  {   
       flex-direction: column;
     }
     ul,li {
         margin: 0.5em;
       }
-      .nav-btn{
-        padding: 0.5em 0.25em;
-      }
       .nav-title{
         font-size: medium;
         margin: 0;
       }
+
   }
 
 
