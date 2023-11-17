@@ -2,16 +2,50 @@ body {
   margin: 0;
 }
 
+/* Navigation Bar Implementation */
+
+/* General styling for the navigation bar */
+
 .navbar {
   background-color: #764abc;
   padding: 1.5em;
   top: 0;
 }
 
+/* Hamburger Menu Icon and Mobile Styles */
+
+.menu-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/*the check box is always hidden*/
+
+#menu {
+  display: none;
+}
+
+/* Hide the navigation list by default and display it when the menu is checked */
+
+#menu:checked+ul.nav-list {
+  display: block;
+}
+
+
 .nav-list {
   list-style-type: none;
   display: none;
 }
+
+.nav-link {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Common styling for navigation links and logo */
 
 .nav-link,
 .nav-logo {
@@ -19,11 +53,14 @@ body {
   color: white;
 }
 
+/* Styling for individual list items in the navigation menu */
 .nav-list li {
   margin-right: 2em;
   text-align: center;
 }
 
+
+/* Logo Styling */
 .nav-logo {
   font-size: x-large;
   font-weight: bold;
@@ -34,37 +71,17 @@ body {
   padding-left: 1%;
 }
 
-.nav-link {
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.menu-toggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  cursor: pointer;
-  font-size: 24px;
-}
-
-#menu {
-  display: none;
-}
-
-#menu:checked+ul.nav-list {
-  display: block;
-}
-
 
 img {
   border-radius: 8%;
 }
 
-
-
-/*Responsive layout: Stack two columns vertically under 700px. Code inspired from "W3Schools responsive flexboxes." */
+/* Responsive Layout for Wider Screens */
+/*Responsive layout: Stack items in row . Code inspired from "W3Schools responsive flexboxes." */
 
 @media screen and (min-width: 700px) {
+
+   /* Flex layout for the navigation bar and alignment of items */
 
   .navbar{
     display: flex;
@@ -74,12 +91,9 @@ img {
     
   }
 
-  #menu:checked+ul.nav-list {
-    display: flex;
-  }
 
   #menu:checked+ul.nav-list {
-    display: block;
+    display: flex;
   }
 
   .nav-list {
@@ -115,6 +129,4 @@ img {
     font-weight: bold;
     padding: 1em;
   }
-  
-
 }
