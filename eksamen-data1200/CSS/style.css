@@ -2,73 +2,91 @@ body {
   margin: 0;
 }
 
-/* Navigation Bar Implementation */
+/* Header part|-- Nav-Bar Implementation */
 
 /* General styling for the navigation bar */
-
 .navbar {
   background-color: #764abc;
+  /*background-color: #212529; alternative color*/
   padding: 1.5em;
   top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Hamburger Menu Icon and Mobile Styles */
-
 .menu-toggle {
   position: absolute;
   top: 20px;
   right: 20px;
   cursor: pointer;
   font-size: 24px;
+  display: none;
+  /* Initially hidden */
 }
 
-/*the check box is always hidden*/
-
+/* Checkbox for the menu, always hidden */
 #menu {
   display: none;
 }
 
-/* Hide the navigation list by default and display it when the menu is checked */
-
-#menu:checked+ul.nav-list {
-  display: block;
-}
-
-
+/* Navigation list styling */
 .nav-list {
   list-style-type: none;
-  display: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
-.nav-link {
-  text-decoration: none;
-  font-weight: bold;
+/* Individual list items in the navigation menu */
+.nav-list li {
+  margin-right: 2em;
+  text-align: center;
+  border-right: 2px solid #1DC9B7;
 }
 
 /* Common styling for navigation links and logo */
-
 .nav-link,
 .nav-logo {
   text-decoration: none;
   color: white;
 }
 
-/* Styling for individual list items in the navigation menu */
+/* Additional styling for list items in the navigation menu */
 .nav-list li {
-  margin-right: 2em;
   text-align: center;
 }
-
+.nav-link{
+  padding: 1em;
+  text-align: center;
+  font-weight: bold;
+}
 
 /* Logo Styling */
 .nav-logo {
   font-size: x-large;
   font-weight: bold;
   display: inline-block;
-  border-bottom: 2px solid transparent; /* Transparent border initially, the border is added on hover */
-  transition: transform 0.3s ease, border-bottom 0.3s ease; 
+  border-bottom: 2px solid transparent;
+  /* Transparent border initially, the border is added on hover */
+  transition: transform 0.3s ease, border-bottom 0.3s ease;
   transform-origin: center bottom;
   padding-left: 1%;
+}
+
+/* link styling, hover and active (by help of active class in html)  */
+.nav-link:hover  {
+  background: #1DC9B7;
+}
+.nav-logo:hover{
+  transform: scale(1.2);
+  border-bottom: 2px solid #1DC9B7; 
+}
+
+.nav-link.active{
+  border-bottom: 2px solid whitesmoke ;
 }
 
 
@@ -76,52 +94,35 @@ img {
   border-radius: 8%;
 }
 
-/* Responsive Layout for Wider Screens */
-/*Responsive layout: Stack items in row . Code inspired from "W3Schools responsive flexboxes." */
 
-@media screen and (min-width: 700px) {
+/* Responsive Layout for Small Screens */
+/* Responsive layout: Stack items in row. Code inspired by "W3Schools responsive flexboxes." */
+@media screen and (max-width: 700px) {
 
-   /* Flex layout for the navigation bar and alignment of items */
-
-  .navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    
-  }
-
-
-  #menu:checked+ul.nav-list {
-    display: flex;
-  }
-
-  .nav-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-  .nav-list li {
-    border-right: 1px solid #1DC9B7;
-  }
-
+  /* Display hamburger menu icon */
   .menu-toggle {
+    display: block;
+  }
+
+  /* Hide navigation list by default for smaller screens */
+  .nav-list {
     display: none;
   }
 
-  .nav-logo:hover,
-  .nav-link:hover {
-    color: rgba(255, 255, 255, 1);
+  /* Display navigation list when the menu is checked */
+  #menu:checked+ul.nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 
-  .nav-link:hover  {
-    background: #1DC9B7;
+  /* Adjusting layout for the entire navbar on smaller screens */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
   }
-  .nav-logo:hover {
-    transform: scale(1.2);
-    border-bottom: 2px solid #1DC9B7; 
-}
-  
+
+  /* Additional styling for navigation links on smaller screens */
   .nav-link {
     text-decoration: none;
     display: block;
@@ -129,4 +130,5 @@ img {
     font-weight: bold;
     padding: 1em;
   }
+
 }
