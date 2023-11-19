@@ -79,6 +79,7 @@ body {
 /* link styling, hover and active (by help of active class in html)  */
 .nav-link:hover  {
   background: #1DC9B7;
+  transition: 0.8s;
 }
 .nav-logo:hover{
   transform: scale(1.2);
