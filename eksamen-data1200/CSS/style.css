@@ -132,3 +132,45 @@ img {
   }
 
 }
+
+  /* A grid container to make it possible to style your page as you like with the placement */
+.grid-container{
+  display: grid;
+ grid-template-areas: 
+ "heading heading heading heading"
+ "link main main main"
+ "link main main main"
+ "link main main main";
+}
+
+  /*one out of three "areas" that we can choose where to put inside the grid container, this one is for the main paragraphs and they will take up the middle and the right side of the screen*/
+.paragrafer{
+  grid-area: main;
+  background-color: yellow;
+}
+
+  /*one out of three "areas" that we can choose where to put inside the grid container, this one is for the links and they will take up the left side of the screen*/
+.link{
+  grid-area: link;
+  background-color: yellow;
+  color: black;
+}
+
+  /*one out of three "areas" that we can choose where to put inside the grid container, this one is for the heading and it will take up the top of the screen*/
+.heading{
+  grid-area: heading;
+  background-color: black;
+  color: yellow;
+}
+
+  /*this is to make space between links in the topical page*/
+.space-link{
+  margin-bottom: 50%;
+  width: 5%;
+}
+
+  /*this class is for centering texts*/
+.center{
+  text-align: center;
+}
+
