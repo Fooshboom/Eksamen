@@ -24,6 +24,11 @@ body {
   margin-top: 10%;
 }
 
+/*Avrundede hjørner på images*/
+.img-border{
+  border-radius: 8%;
+}
+
 /* Hamburger Menu Icon and Mobile Styles */
 .menu-toggle {
   position: fixed;
