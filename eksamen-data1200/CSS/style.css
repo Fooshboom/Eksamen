@@ -182,8 +182,16 @@ body {
   .intro-box{
     margin-top: 2em;
   }
-
-}
+  .intro-box h1,.intro-box p{
+    max-width: 50%;
+  }
+  .intro-box h1 {
+    font-size: 2em;
+  }
+  .intro-box p{
+    font-size: 1em;
+  }
+  }
 
   /* A grid container to make it possible to style your page as you like with the placement */
 .grid-container{
