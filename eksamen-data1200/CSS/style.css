@@ -6,6 +6,9 @@ body {
 
 /* General styling for the navigation bar */
 .navbar {
+  position: fixed;
+  z-index: 50;
+  width: 100%;
   background-color: #764abc;
   /*background-color: #212529; alternative color*/
   padding: 1.5em;
@@ -18,7 +21,7 @@ body {
 
 /* Hamburger Menu Icon and Mobile Styles */
 .menu-toggle {
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 20px;
   cursor: pointer;
@@ -90,6 +93,44 @@ body {
   border-bottom: 2px solid whitesmoke ;
 }
 
+.intro-box{
+  margin-top: 6em;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), url(../IMG/oslomet4.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.intro-box h1 {
+  margin: 0;
+  font-size: 3.5em;
+  font-family: "Raleway";
+  color: #FFFFFF;
+}
+.intro-box p{
+  color: #FFFFFF;
+  font-size: 1.5em;
+}
+.intro-box h1,.intro-box p{
+  max-width: 70%;
+  text-align: center;
+}
+.apply-btn{
+  text-decoration: none;
+  color: #FFFFFF;
+  background: transparent;
+  border: 1px solid #ff4f5a;
+  border-radius: 5px;
+  padding: 1em 2em;
+  font-size: 1.3em; 
+}
 
 img {
   border-radius: 8%;
@@ -130,6 +171,10 @@ img {
     text-align: center;
     font-weight: bold;
     padding: 1em;
+  }
+  
+  .intro-box{
+    margin-top: 2em;
   }
 
 }
