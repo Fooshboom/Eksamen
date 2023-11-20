@@ -3,22 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accessibility</title>
+    <title>More information</title>
     <link rel="stylesheet" href="../CSS/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      />
-          <!--koden for ikonet til oslomet er hentet fra oslomet sine sider-->
-    <link href="https://student.oslomet.no/o/oslomet-theme/images/favicon.ico" rel="icon">
+    />
+        <!--koden for ikonet til oslomet er hentet fra oslomet sine sider-->
+        <link href="https://student.oslomet.no/o/oslomet-theme/images/favicon.ico" rel="icon">
   </head>
   <body>
-    <ul class="htmlLink">
-      <li class="spaceBetween"><a href="..\index.html">Hovedside</a></li>
-      <li class="spaceBetween"><a href="content.html">More information</a></li>
-      <li class="spaceBetween"><a href="topical.html">Topical</a></li>
-    </ul>
-
-    <img src="IMG/screen-accessibility.png" alt="screenshot of accessibility" />
+    <!-- Header -->
+    <header>
+      <nav class="navbar">
+        
+        <a href="..\index.html" class="nav-logo">Pilestredet Campus</a>
+        <label class="menu-toggle" for="menu" tabindex="0">
+          <i class="fa fa-bars"></i>
+        </label>
+        <input id="menu" type="checkbox" />
+        <ul class="nav-list">
+          <li><a href="..\index.html" class="nav-link">Home</a></li>
+          <li><a href="content.html" class="nav-link">More information</a></li>
+          <li><a href="topical.html" class="nav-link">Topical</a></li>
+          <li>
+            <a href="accessibility.html" class="nav-link active">Accessibility</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h1 class="nav-h1">Accessibility</nav-h1>
+    <h2>How</h2>
+    <p> placeholder</p>
   </body>
 </html>
