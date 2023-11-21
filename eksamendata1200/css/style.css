@@ -1,8 +1,9 @@
+/* Resetting default margin for body */
 body {
   margin: 0;
 }
 
-/* Header part|-- Nav-Bar Implementation */
+/*------------------------  Header part|-- Nav-Bar Implementation------------------------  */
 
 /* General styling for the navigation bar */
 .navbar {
@@ -19,28 +20,23 @@ body {
   align-items: center;
 }
 
-/* Margin for å få h1 under nav-baren*/
-.nav-h1 {
-  margin-top: 11%;
-}
-
-/* Hamburger Menu Icon and Mobile Styles */
+/* Hamburger Menu Icon| added to hide navbar for smaller screen devices*/
 .menu-toggle {
   position: fixed;
   top: 20px;
   right: 20px;
   cursor: pointer;
   font-size: 24px;
-  display: none;
   /* Initially hidden */
+  display: none;
 }
 
-/* Checkbox for the menu, always hidden */
+/* Checkbox for the menu, always hidden | implemented to toggle the hamburgermenu*/
 #menu {
   display: none;
 }
 
-/* Navigation list styling */
+/* Navigation "list" styling (ul) | navigation menu */
 .nav-list {
   list-style-type: none;
   display: flex;
@@ -62,10 +58,7 @@ body {
   color: white;
 }
 
-/* Additional styling for list items in the navigation menu */
-.nav-list li {
-  text-align: center;
-}
+/* Additional styling for navigation links in the navigation menu (a) */
 .nav-link {
   padding: 1em;
   text-align: center;
@@ -98,12 +91,16 @@ body {
   border-bottom: 2px solid whitesmoke;
 }
 
+/* Styling for the introductory box */
 .intro-box {
+  /* margin added to compensate for making navbar sticky*/
   margin-top: 6em;
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../img/oslomet4.jpg);
+  /* This code to add (only add*) the image as background image was inspired and inpart taken from CampusOxford.com*/
+  /* Photo: Mattias Müller / OsloMet, URL: https://www.flickr.com/photos/oslomet/50505034346/in/album-72157627082396818/*/
   background-size: cover;
   background-position: center;
   position: relative;
@@ -113,6 +110,7 @@ body {
   justify-content: center;
 }
 
+/* Styling for heading and paragraphs in the introductory box */
 .intro-box h1 {
   margin: 0;
   font-size: 3.5em;
@@ -123,11 +121,14 @@ body {
   color: #ffffff;
   font-size: 1.5em;
 }
+/* Common styling for heading and paragraphs in the introductory box */
 .intro-box h1,
 .intro-box p {
   max-width: 70%;
   text-align: center;
 }
+
+/* Styling for the "Apply Now" button */
 .apply-btn {
   text-decoration: none;
   color: #ffffff;
@@ -173,6 +174,7 @@ body {
     padding: 1em;
   }
 
+  /* Styling for heading and paragraphs in the introductory box on smaller screens */
   .intro-box {
     margin-top: 2em;
   }
@@ -187,6 +189,8 @@ body {
     font-size: 1em;
   }
 }
+
+/*------------------------  Topical page | styling ------------------------  */
 
 /* A grid container to make it possible to style your page as you like with the placement */
 .grid-container {
@@ -229,13 +233,18 @@ body {
   text-align: center;
 }
 
-/* Main part|------- */
-/* Section overview|--*/
+/*------------------------  Main part------------------------  */
+
+/* Styling for section overview */
+/* This class is used to style the generanl info in the main part and is used in the whole website*/
 
 .overview {
   width: 100%;
   margin: 0;
 }
+
+/* Styling for dividing sections into rows */
+/* This class is used to divide section into rows and is used in the whole website*/
 .row {
   width: 100%;
   height: 100%;
@@ -243,6 +252,8 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+/* Styling for columns in the overview section */
 .column {
   width: 100%;
   height: 100%;
@@ -252,15 +263,18 @@ body {
   align-items: center;
   justify-content: center;
 }
+/* Styling for images inside columns| images are covering their respective column  */
 .column img {
   width: 100%;
   object-fit: cover;
 }
+
 .column p,
 h2 {
   width: 90%;
 }
-
+/* Responsive layout for smaller screens, NB rows is used in my other sections as well
+so this is the code that apllies in all sections row is used */
 @media screen and (max-width: 700px) {
   .row {
     flex-direction: column;
@@ -269,6 +283,7 @@ h2 {
   }
 }
 
+/* Styling for the map section, used Id as we used it once in the whole website */
 #map {
   align-items: center;
   justify-content: center;
@@ -283,7 +298,8 @@ h2 {
   height: 450%;
   border: 0;
 }
-/* Footer part|------- */
+
+/*------------------------ Footer part----------------------  */
 
 footer {
   width: 100%;
@@ -294,7 +310,7 @@ footer {
   display: flex;
   flex-direction: column;
 }
-
+/* Styling for columns within the footer */
 .footer-column {
   width: 100%;
   height: 100%;
@@ -304,7 +320,7 @@ footer {
   align-items: center;
   justify-content: center;
 }
-
+/* Styling for items in footer */
 .footer-column p {
   margin: 0;
   margin-top: 0.5em;
@@ -325,6 +341,7 @@ footer {
 .footer-column a:hover {
   border-bottom: 1px solid white;
 }
+/* Styling for social icons within the footer */
 .social-icons {
   list-style-type: none;
   margin-right: 0;
@@ -347,6 +364,7 @@ footer {
   color: #ffffff;
 }
 
+/* Responsive layout for smaller screens in the footer section */
 @media screen and (max-width: 700px) {
   footer {
     height: 90vh;
@@ -377,13 +395,11 @@ footer {
   margin-top: 6em;
   width: 100%;
   height: 20vh;
-  background-color: #fff; 
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.overview-headline h1 { 
+.overview-headline h1 {
   color: #764abc;
 }
-
-
