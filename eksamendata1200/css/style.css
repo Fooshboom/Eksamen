@@ -20,15 +20,15 @@ body {
 }
 
 /* Margin for å få h1 under nav-baren*/
-.nav-h1{
+.nav-h1 {
   margin-top: 11%;
 }
 
 /*Avrundede hjørner på images*/
-.img-styling{
+.img-styling {
   border-radius: 8%;
   height: 15%;
-  width: 30%
+  width: 30%;
 }
 
 /* Hamburger Menu Icon and Mobile Styles */
@@ -59,7 +59,7 @@ body {
 .nav-list li {
   margin-right: 2em;
   text-align: center;
-  border-right: 2px solid #1DC9B7;
+  border-right: 2px solid #1dc9b7;
 }
 
 /* Common styling for navigation links and logo */
@@ -73,7 +73,7 @@ body {
 .nav-list li {
   text-align: center;
 }
-.nav-link{
+.nav-link {
   padding: 1em;
   text-align: center;
   font-weight: bold;
@@ -92,24 +92,25 @@ body {
 }
 
 /* link styling, hover and active (by help of active class in html)  */
-.nav-link:hover  {
-  background: #1DC9B7;
+.nav-link:hover {
+  background: #1dc9b7;
   transition: 0.8s;
 }
-.nav-logo:hover{
+.nav-logo:hover {
   transform: scale(1.2);
-  border-bottom: 2px solid #1DC9B7; 
+  border-bottom: 2px solid #1dc9b7;
 }
 
-.nav-link.active{
-  border-bottom: 2px solid whitesmoke ;
+.nav-link.active {
+  border-bottom: 2px solid whitesmoke;
 }
 
-.intro-box{
+.intro-box {
   margin-top: 6em;
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), url(../img/oslomet4.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/oslomet4.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -117,38 +118,36 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 .intro-box h1 {
   margin: 0;
   font-size: 3.5em;
   font-family: "Raleway";
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.intro-box p{
-  color: #FFFFFF;
+.intro-box p {
+  color: #ffffff;
   font-size: 1.5em;
 }
-.intro-box h1,.intro-box p{
+.intro-box h1,
+.intro-box p {
   max-width: 70%;
   text-align: center;
 }
-.apply-btn{
+.apply-btn {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
   background: transparent;
   border: 1px solid #ff4f5a;
   border-radius: 5px;
   padding: 1em 2em;
-  font-size: 1.3em; 
+  font-size: 1.3em;
 }
-
 
 /* Responsive Layout for Small Screens */
 /* Responsive layout: Stack items in row. Code inspired by "W3Schools responsive flexboxes." */
 @media screen and (max-width: 700px) {
-
   /* Display hamburger menu icon */
   .menu-toggle {
     display: block;
@@ -160,7 +159,7 @@ body {
   }
 
   /* Display navigation list when the menu is checked */
-  #menu:checked+ul.nav-list {
+  #menu:checked + ul.nav-list {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -180,77 +179,78 @@ body {
     font-weight: bold;
     padding: 1em;
   }
-  
-  .intro-box{
+
+  .intro-box {
     margin-top: 2em;
   }
-  .intro-box h1,.intro-box p{
+  .intro-box h1,
+  .intro-box p {
     max-width: 50%;
   }
   .intro-box h1 {
     font-size: 2em;
   }
-  .intro-box p{
+  .intro-box p {
     font-size: 1em;
   }
-  }
-
-  /* A grid container to make it possible to style your page as you like with the placement */
-.grid-container{
-  display: grid;
- grid-template-areas: 
- "heading heading heading heading"
- "link main main main"
- "link main main main"
- "link main main main";
 }
 
-  /*one out of three "areas" that we can choose where to put inside the grid container, this one is for the main paragraphs and they will take up the middle and the right side of the screen*/
-.paragrafer{
+/* A grid container to make it possible to style your page as you like with the placement */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "heading heading heading heading"
+    "link main main main"
+    "link main main main"
+    "link main main main";
+}
+
+/*one out of three "areas" that we can choose where to put inside the grid container, this one is for the main paragraphs and they will take up the middle and the right side of the screen*/
+.paragrafer {
   grid-area: main;
   background-color: yellow;
 }
 
-  /*one out of three "areas" that we can choose where to put inside the grid container, this one is for the links and they will take up the left side of the screen*/
-.link{
+/*one out of three "areas" that we can choose where to put inside the grid container, this one is for the links and they will take up the left side of the screen*/
+.link {
   grid-area: link;
   background-color: yellow;
   color: black;
 }
 
-  /*one out of three "areas" that we can choose where to put inside the grid container, this one is for the heading and it will take up the top of the screen*/
-.heading{
+/*one out of three "areas" that we can choose where to put inside the grid container, this one is for the heading and it will take up the top of the screen*/
+.heading {
   grid-area: heading;
   background-color: black;
   color: yellow;
 }
 
-  /*this is to make space between links in the topical page*/
-.space-link{
+/*this is to make space between links in the topical page*/
+.space-link {
   margin-bottom: 50%;
   width: 5%;
 }
 
-  /*this class is for centering texts*/
-.center{
+/*this class is for centering texts*/
+.center {
   text-align: center;
 }
 
 /* Main part|------- */
 /* Section overview|--*/
 
-.overview{
+.overview {
   width: 100%;
   margin: 0;
 }
-.row{
+.row {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.column{
+.column {
   width: 100%;
   height: 100%;
   flex: 1;
@@ -259,23 +259,24 @@ body {
   align-items: center;
   justify-content: center;
 }
-.column img{
-    width: 100%;
-    object-fit: cover;
+.column img {
+  width: 100%;
+  object-fit: cover;
 }
-.column p, h2{
+.column p,
+h2 {
   width: 90%;
 }
 
 @media screen and (max-width: 700px) {
-  .row{
+  .row {
     flex-direction: column;
     width: 100%;
     height: 100%;
   }
 }
 
-#map{
+#map {
   align-items: center;
   justify-content: center;
   display: flex;
@@ -284,24 +285,24 @@ body {
   height: 70vh;
   margin-top: 4em;
 }
-#map iframe{
+#map iframe {
   width: 60%;
- height: 450%; 
- border: 0;
+  height: 450%;
+  border: 0;
 }
 /* Footer part|------- */
 
-footer{
+footer {
   width: 100%;
   height: 40vh;
   background-color: #764abc;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0;
   display: flex;
   flex-direction: column;
 }
 
-.footer-column{
+.footer-column {
   width: 100%;
   height: 100%;
   flex: 1;
@@ -312,64 +313,64 @@ footer{
 }
 
 .footer-column p {
-  margin: 0; 
+  margin: 0;
   margin-top: 0.5em;
   padding: 0;
 }
-.footer-column h4{
+.footer-column h4 {
   margin-bottom: 1em;
   font-weight: bold;
   font-size: 1.5em;
 }
 
 .footer-column a {
-  color: #FFFFFF; 
-  text-decoration: none; 
+  color: #ffffff;
+  text-decoration: none;
   font-size: large;
   margin-top: 1em;
 }
 .footer-column a:hover {
   border-bottom: 1px solid white;
 }
-.social-icons{
+.social-icons {
   list-style-type: none;
   margin-right: 0;
   padding: 0%;
 }
-.social-icons li{
+.social-icons li {
   margin-bottom: 1em;
 }
 .fa {
   margin-right: 0.5em;
 }
-.footer-copyright{
+.footer-copyright {
   width: 100%;
   height: 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   justify-content: center;
-  background-color: #1DC9B7;
-  color: #FFFFFF;
+  background-color: #1dc9b7;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 700px) {
-  footer{
+  footer {
     height: 90vh;
   }
 
-  .footer-column{
+  .footer-column {
     border-bottom: 2px solid #fff;
     padding-bottom: 10px;
   }
 
-  .footer-column h4{
+  .footer-column h4 {
     margin-bottom: 0.5em;
     font-weight: bold;
     font-size: 1em;
   }
 
-  .footer-column p { 
+  .footer-column p {
     margin-top: 0.2em;
   }
 
@@ -377,13 +378,21 @@ footer{
     font-size: medium;
     margin-top: 0.75em;
   }
-
-  
-
 }
 
-.nav-h1-accesibility{
-  margin-top: 11%;
-  text-align: center;
-  
+.overview-headline {
+  margin-top: 6em;
+  width: 100%;
+  height: 20vh;
+  background-color: #fff; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.overview-headline h1 { 
+  color: #764abc;
+  margin:0;
+  padding:0;
+}
+
+
