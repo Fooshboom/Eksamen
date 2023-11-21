@@ -297,7 +297,8 @@ footer{
   background-color: #764abc;
   color: #FFFFFF;
   margin: 0;
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-column{
@@ -350,4 +351,33 @@ footer{
   justify-content: center;
   background-color: #1DC9B7;
   color: #FFFFFF;
+}
+
+@media screen and (max-width: 700px) {
+  footer{
+    height: 90vh;
+  }
+
+  .footer-column{
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+  }
+
+  .footer-column h4{
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    font-size: 1em;
+  }
+
+  .footer-column p { 
+    margin-top: 0.2em;
+  }
+
+  .footer-column a {
+    font-size: medium;
+    margin-top: 0.75em;
+  }
+
+  
+
 }
