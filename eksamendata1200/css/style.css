@@ -362,6 +362,7 @@ footer {
   justify-content: center;
   background-color: #1dc9b7;
   color: #ffffff;
+  font-weight: bolder;
 }
 
 /* Responsive layout for smaller screens in the footer section */
