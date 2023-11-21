@@ -193,6 +193,13 @@ body {
 
 /*------------------------  Topical page | styling ------------------------  */
 
+/*Styling for the images*/
+.img-styling{
+  border-radius: 8%;
+  height: 15%;
+  width: 30%;
+}
+
 /* A grid container to make it possible to style your page as you like with the placement */
 .grid-container {
   display: grid;
